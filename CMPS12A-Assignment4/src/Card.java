@@ -11,7 +11,7 @@ public class Card {
 			}
 		}
 	}
-	public void markNumber(int number) { // something wrong here
+	public void markNumber(int number) {
 		for (int i = 0; i < isMarked.length; i++) {
 			for (int j = 0; j < isMarked[i].length;j++) {
 				if (numbers[i][j] == number) {
@@ -21,7 +21,7 @@ public class Card {
 		}
 	}
 	public boolean isMarked(int row, int column) {
-		if (isMarked[row][column] == true) {
+		if (isMarked[row][column]) {
 			return true;
 		}else {
 			return false;

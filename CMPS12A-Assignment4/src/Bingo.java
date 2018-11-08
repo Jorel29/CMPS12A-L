@@ -14,7 +14,7 @@ public class Bingo {
 	public String play(int number) {
 		for (int i = 0; i < players.length; i++) {
 			players[i].markNumber(number);
-			if (players[i].isWinner() == true) {
+			if (players[i].isWinner()) {
 				winners = winners + players[i].getName() + " ";
 			} 
 		}
