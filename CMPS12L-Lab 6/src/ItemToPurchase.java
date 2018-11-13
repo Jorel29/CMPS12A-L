@@ -1,8 +1,8 @@
 class ItemToPurchase{
 	//private fields such as itemName, itemPrice, and itemQuantity
-	private String itemName;
-	private int itemPrice;
-	private int itemQuantity;
+	private String itemName = "none";
+	private int itemPrice = 0;
+	private int itemQuantity = 0;
 	
 	//default constructor
 	ItemToPurchase(){
