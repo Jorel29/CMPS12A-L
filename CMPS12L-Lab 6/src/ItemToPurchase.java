@@ -3,12 +3,35 @@ class ItemToPurchase{
 	private String itemName = "none";
 	private int itemPrice = 0;
 	private int itemQuantity = 0;
+	private String itemDescription;
 	
 	//default constructor
 	ItemToPurchase(){
 		itemName = "none";
 		itemPrice = 0;
 		itemQuantity = 0;
+		itemDescription ="none";
+	}
+	ItemToPurchase(String n, String d, int p, int q){
+		itemName = n;
+		itemDescription = d;
+		itemPrice = p;
+		itemQuantity = q;
+	}
+	//setDesc method
+	public void setDescription(String d) {
+		itemDescription = d;
+	}
+	//getDesc
+	public String getDescription() {
+		return itemDescription;
+	}
+	//printItemCost
+	public void printItemCost() {
+		System.out.println(itemName + " " + itemQuantity + " @ $" + itemPrice + " = $" + itemPrice*itemQuantity);
+	}
+	public void printItemDescription() {
+		System.out.println(itemName + ": " + itemDescription);
 	}
 	//setName method
 	public void setName(String n) {
