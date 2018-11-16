@@ -55,14 +55,14 @@ public class ShoppingCart {
 	public void modifyItem(ItemToPurchase a) {
 		for (int j = 0; j < items.length; j++) {
 			if (items[j].getName().equals(a.getName())) {
-				if (!(items[j].getName().equals("none"))) {
-					items[j].setName("none");
+				if (!(a.getName().equals("none"))) {
+					items[j].setName(a.getName());
 				}
-				if (!(items[j].getDescription().equals("none"))) {
-					items[j].setDescription("none");
+				if (!(a.getDescription().equals("none"))) {
+					items[j].setDescription(a.getDescription());
 				}
-				if(!(items[j].getQuantity() == 0)) {
-					items[j].setQuantity(0);
+				if(!(a.getQuantity() == 0)) {
+					items[j].setQuantity(a.getQuantity());
 				}
 			}else if (j == items.length-1) {
 				System.out.println("Item not found in cart. Nothing modified");
